@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff9f9"/>
+      <stop offset="1" stop-color="#fffae2"/>
+    </radialGradient>
+    <filter id="club" x="25" y="25" width="61.751" height="62" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.569"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_274" data-name="Group 274" transform="translate(-1209 334)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="50" cy="50" r="50" transform="translate(1209 -334)" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 1209, -334)" filter="url(#club)">
+      <path id="club-2" data-name="club" d="M38.509,42.072a12.477,12.477,0,0,1-9.588-4.479,71.156,71.156,0,0,0,5.651,10.384A1.962,1.962,0,0,1,33.008,51h-14a1.96,1.96,0,0,1-1.565-3.026,71.153,71.153,0,0,0,5.651-10.384,12.5,12.5,0,1,1-9.066-20.515,12.5,12.5,0,1,1,23.962,0,12.5,12.5,0,1,1,.522,25Z" transform="translate(24 24)"/>
+    </g>
+  </g>
+</svg>

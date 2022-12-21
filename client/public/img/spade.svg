@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff9f9"/>
+      <stop offset="1" stop-color="#fffae2"/>
+    </radialGradient>
+    <filter id="spade" x="27" y="25" width="58.667" height="62" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_275" data-name="Group 275" transform="translate(-1097 337)">
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="50" cy="50" r="50" transform="translate(1097 -337)" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 1097, -337)" filter="url(#spade)">
+      <path id="spade-2" data-name="spade" d="M21.613,37.487A11.667,11.667,0,0,1,1,30c0-5.34,3.8-8.777,8.867-13.36,4.42-4,9.807-8.873,14.467-16.64C28.993,7.767,34.38,12.64,38.8,16.64c5.067,4.583,8.867,8.02,8.867,13.36a11.667,11.667,0,0,1-20.613,7.487,66.4,66.4,0,0,0,5.273,9.69A1.831,1.831,0,0,1,30.867,50H17.8a1.829,1.829,0,0,1-1.46-2.823,66.4,66.4,0,0,0,5.273-9.69Z" transform="translate(26 25)"/>
+    </g>
+  </g>
+</svg>
