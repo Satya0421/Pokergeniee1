@@ -123,45 +123,53 @@ const [spraysererr,setSprayserErr] =useState([]);
   return (
 <div style={{backgroundColor:"#fff"}}>                           
  <div style={{marginTop:"0px"}}><ResponsiveAppBar /> </div> 
-
+<div className="col-12" style={{padding:"10px",}} >
+      <div style={{}}>
+   
+<video className="video-box" autoPlay loop muted width="100%" >
+          <source src="home_video.mp4" type="video/mp4"></source>
+        </video>
+        </div>
+    </div> <br />
 
   
-      <div className="container" style={{paddingTop:"10px"}}>
+      <div className="container" style={{paddingTop:"10px",width:"100%"}}>
       <div className="col">
       <Carousel  indicators={false} controls={false} >
                                                
 
 
                                             <Carousel.Item interval={2000}>
-                                               <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+                                               <img className="lazy "  src="img/poker_banner1.png" width="100%" alt="img" loading="lazy"/>
                                                
                                                </Carousel.Item>
                                             <Carousel.Item interval={2000}>
-                                               <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+                                               <img className="lazy "   src="img/poker_banner2.jpg" width="100%" alt="img" loading="lazy"/>
                                                
                                                </Carousel.Item>
                                             <Carousel.Item interval={2000}>
-                                               <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+                                               <img className="lazy "  src="img/poker_banner1.png" width="100%" alt="img" loading="lazy"/>
                                                
                                                </Carousel.Item>
                                             <Carousel.Item interval={2000}>
-                                               <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+                                               <img className="lazy "   src="img/poker_banner2.jpg" width="100%" alt="img" loading="lazy"/>
                                                
                                                </Carousel.Item>
 
                                                
                                             </Carousel> 
-{//<AutoplaySlider 
-// play={true}
-//     cancelOnInteraction={false}
-//     interval={2000}
+{
+ //  <AutoplaySlider 
+ // play={true}
+ //     cancelOnInteraction={false}
+ //     interval={2000}
 
-// animation="cubeAnimation">
-//     <div data-src="/img/poker_banner1.png" />
-//     <div data-src="/img/poker_banner2.jpg" />
-//     <div data-src="/img/poker_banner1.png" />
-//     <div data-src="/img/poker_banner2.jpg" />
-//       </AutoplaySlider>
+ // animation="cubeAnimation">
+ //     <div data-src="img/poker_banner1.png" />
+ //     <div data-src="img/poker_banner2.jpg" />
+ //     <div data-src="img/poker_banner1.png" />
+ //     <div data-src="img/poker_banner2.jpg" />
+ //       </AutoplaySlider>
 }
       </div>  
     </div> 
@@ -221,7 +229,7 @@ const [spraysererr,setSprayserErr] =useState([]);
 
                                     <div className="container">
                     <ul className="row " style={{padding:"0px",}}>
-                      <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                      <li className="col-12 col-sm-6 col-md-4 col-lg-3  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
                         <div className="block-icon  " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="windows.svg" alt="img"  /><br />
                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>WINDOWS APP</span>
@@ -231,7 +239,7 @@ const [spraysererr,setSprayserErr] =useState([]);
                         </div>
           
                       </li>
-                       <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                       <li className="col-12 col-sm-6 col-md-4 col-lg-3  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
                         <div className="block-icon  " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="play.svg" alt="img" /><br />
                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>INSTANT PLAY</span>
@@ -242,7 +250,7 @@ const [spraysererr,setSprayserErr] =useState([]);
           }          
                         </div>
                       </li>
-                       <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                       <li className="col-12 col-sm-6 col-md-4 col-lg-3  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
                         <div className="block-icon  " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="android.svg" alt="img" /><br />
                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>ANDROID APP</span>
@@ -252,7 +260,7 @@ const [spraysererr,setSprayserErr] =useState([]);
           }
                         </div>
                       </li>
-                       <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                       <li className="col-12 col-sm-6 col-md-4 col-lg-3  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
                         <div className="block-icon justify-content-center " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="mac.svg" alt="img" /><br />
                                                     <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>MAC APP</span>

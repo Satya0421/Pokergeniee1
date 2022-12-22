@@ -109,7 +109,7 @@ function Footer() {
           
          <div className="row justify-content-between copyright" style={{margin:"0px"}}>
          <div className="col-12 col-md-3 " style={{textAlign:"center"}}>
-              <p className="">
+              <p className="logo-disappear">
             <img src="pokergenieelogo1.png" height="50px" width="120px" alt="logo" style={{paddingRight:"0%"}} />
               </p>
             </div>

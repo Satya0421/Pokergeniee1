@@ -65,11 +65,11 @@ const ResponsiveAppBar = () => {
 
   return (
     <>
-       <AppBar position="static" sx={{backgroundColor:"#000",padding:"0px",minHeight:"70px",textAlign:"top-center",maxHeight:"70px",p:0,}}>
-      <Container maxWidth="xl" sx={{textAlign:"center",height:"70px",}}>
+       <AppBar position="static" sx={{backgroundColor:"#000",padding:"0px",minHeight:"90px",textAlign:"top-center",maxHeight:"90px",p:0,}}>
+      <Container maxWidth="xl" sx={{textAlign:"center",height:"90px",}}>
         <Toolbar disableGutters sx={{textAlign:"center",height:"100%"}}>
         <Box sx={{ flexGrow: 0,}} style={{float:"left",textAlign:"top-center",paddingRight:"0%"}}>
-                                <a href="/" className="logo"><img src="pokergenieelogo1.png"  alt="logo" /></a>
+                                <a href="/" className="logo"><img src="pokergenieelogo1.png" width="100%" alt="logo" /></a>
                               
             
           </Box>
@@ -101,9 +101,10 @@ const ResponsiveAppBar = () => {
                 top:"auto",
                 zIndex: 1,
                 marginRight:"0%", 
-                marginTop:"69px",
+                marginTop:"89px",
                 float:"right",       
-                backgroundColor:"#262c30",
+                //backgroundColor:"#262c30",
+                backgroundColor:"#000",
                 borderRadius:"0px",
               }
             }}
@@ -132,12 +133,7 @@ const ResponsiveAppBar = () => {
                                           
                                           <li className="icon1">
                                             <a className="icon" href="#"  >
-                                              <i className="fa fa-youtube" aria-hidden="true"></i>
-                                            </a>
-                                          </li>
-                                          <li className="icon1">
-                                            <a className="icon" href="#"  >
-                                              <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                              <i className="fa fa-instagram" aria-hidden="true"></i>
                                             </a>
                                           </li>
                                         </ul>
@@ -146,7 +142,7 @@ const ResponsiveAppBar = () => {
           
          
           <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' },height:"100%",marginLeft:"10px",textAlign:"center"}}>
-                            <span style={{float:"left",width:"80%",paddingRight:"0%",textAlign:"center"}}>
+                            <span style={{float:"left",width:"90%",paddingRight:"0%",textAlign:"center"}}>
 <ul className="header-icon" style={{width:"100%",justifyContent:"center"}}><li className="link-head">
                                       <a href="/">Home</a>
                                     </li>
@@ -155,9 +151,10 @@ const ResponsiveAppBar = () => {
                                     <li className="link-head"><a href="#">Tournaments</a></li>
                                     <li className="link-head" style={{visibility:"visible"}}><a href="#">Cashier</a></li>
                                     <li className="link-head"><a href="#">Login / Register</a></li>
+
                                   
             </ul></span>
-            <span style={{float:"right",width:"20%"}}>
+            <span style={{float:"right",width:"10%"}}>
              <ul className="header-icon" >
 
                                       {
@@ -175,14 +172,10 @@ const ResponsiveAppBar = () => {
                                             </a>
                                           </li>
                                         
+                                          
                                           <li className="icon1" style={{visibility:"visible",}}>
                                             <a className="icon" href="#" >
-                                              <i className="fa fa-youtube" aria-hidden="true"></i>
-                                            </a>
-                                          </li>
-                                          <li className="icon1" style={{visibility:"visible",}}>
-                                            <a className="icon" href="#" >
-                                              <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                              <i className="fa fa-instagram" aria-hidden="true"></i>
                                             </a>
                                           </li>
                                         </ul>
