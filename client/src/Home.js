@@ -128,18 +128,41 @@ const [spraysererr,setSprayserErr] =useState([]);
   
       <div className="container" style={{paddingTop:"10px"}}>
       <div className="col">
-<AutoplaySlider 
-play={true}
-    cancelOnInteraction={false}
-    interval={2000}
+      <Carousel  indicators={false} controls={false} >
+                                               
 
-animation="cubeAnimation">
-    <div data-src="/img/poker_banner1.png" />
-    <div data-src="/img/poker_banner2.jpg" />
-    <div data-src="/img/poker_banner1.png" />
-    <div data-src="/img/poker_banner2.jpg" />
-      </AutoplaySlider>
- 
+
+                                            <Carousel.Item interval={2000}>
+                                               <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+                                               
+                                               </Carousel.Item>
+                                            <Carousel.Item interval={2000}>
+                                               <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+                                               
+                                               </Carousel.Item>
+                                            <Carousel.Item interval={2000}>
+                                               <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+                                               
+                                               </Carousel.Item>
+                                            <Carousel.Item interval={2000}>
+                                               <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+                                               
+                                               </Carousel.Item>
+
+                                               
+                                            </Carousel> 
+{//<AutoplaySlider 
+// play={true}
+//     cancelOnInteraction={false}
+//     interval={2000}
+
+// animation="cubeAnimation">
+//     <div data-src="/img/poker_banner1.png" />
+//     <div data-src="/img/poker_banner2.jpg" />
+//     <div data-src="/img/poker_banner1.png" />
+//     <div data-src="/img/poker_banner2.jpg" />
+//       </AutoplaySlider>
+}
       </div>  
     </div> 
           {<section className="" style={{height:"inherit",}}>
@@ -284,27 +307,27 @@ export default Home;
 
 
 // {  
-// // <Carousel  indicators={false} controls={false} >
+// <Carousel  indicators={false} controls={false} >
                                                
 
 
-// //                                             <Carousel.Item interval={2000}>
-// //                                                <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+//                                             <Carousel.Item interval={2000}>
+//                                                <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
                                                
-// //                                                </Carousel.Item>
-// //                                             <Carousel.Item interval={2000}>
-// //                                                <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+//                                                </Carousel.Item>
+//                                             <Carousel.Item interval={2000}>
+//                                                <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
                                                
-// //                                                </Carousel.Item>
-// //                                             <Carousel.Item interval={2000}>
-// //                                                <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+//                                                </Carousel.Item>
+//                                             <Carousel.Item interval={2000}>
+//                                                <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
                                                
-// //                                                </Carousel.Item>
-// //                                             <Carousel.Item interval={2000}>
-// //                                                <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+//                                                </Carousel.Item>
+//                                             <Carousel.Item interval={2000}>
+//                                                <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
                                                
-// //                                                </Carousel.Item>
+//                                                </Carousel.Item>
 
                                                
-// //                                             </Carousel> 
+//                                             </Carousel> 
 // }
