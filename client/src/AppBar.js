@@ -69,7 +69,7 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl" sx={{textAlign:"center",height:"70px",}}>
         <Toolbar disableGutters sx={{textAlign:"center",height:"100%"}}>
         <Box sx={{ flexGrow: 0,}} style={{float:"left",textAlign:"top-center",paddingRight:"0%"}}>
-                                <a href="/" className="logo"><img src="pokergenieelogo.png" alt="logo" /></a>
+                                <a href="/" className="logo"><img src="pokergenieelogo1.png"  alt="logo" /></a>
                               
             
           </Box>
@@ -112,7 +112,7 @@ const ResponsiveAppBar = () => {
         <MenuItem className="activemenu"><li className="activeli"  ><a href="#" >About</a></li></MenuItem>
         <MenuItem className="activemenu"><li className="activeli"><a href="#">Promotions</a></li></MenuItem>
         <MenuItem className="activemenu"><li className="activeli"><a href="#">Tournaments</a></li></MenuItem>
-        <MenuItem className="activemenu"><li className="activeli"><a href="#">Learn</a></li></MenuItem>
+        <MenuItem className="activemenu"><li className="activeli"><a href="#">Cashier</a></li></MenuItem>
         <MenuItem className="activemenu"><li className="activeli"><a href="#">Login / Register</a></li></MenuItem>
          <MenuItem><ul className="header-icon" style={{padding:"0px",}}>
 {
@@ -153,7 +153,7 @@ const ResponsiveAppBar = () => {
                                     <li className="link-head"><a href="#">About</a></li>
                                     <li className="link-head"><a href="#">Promotions</a></li>
                                     <li className="link-head"><a href="#">Tournaments</a></li>
-                                    <li className="link-head" style={{visibility:"visible"}}><a href="#">Learn</a></li>
+                                    <li className="link-head" style={{visibility:"visible"}}><a href="#">Cashier</a></li>
                                     <li className="link-head"><a href="#">Login / Register</a></li>
                                   
             </ul></span>

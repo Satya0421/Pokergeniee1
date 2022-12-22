@@ -20,6 +20,7 @@ const useStyles = makeStyles(theme => ({
         display:"flex",
         flexDirection:"row",
         width:"100%",
+        //height:"min-content",
         // margin:"0.5%",
         // padding:"1%",
           //border:"solid blue 2px",
@@ -37,11 +38,12 @@ const useStyles = makeStyles(theme => ({
     }*/
     container:{
         
-        marginBottom:"10px",
+        //marginBottom:"10px",
         width:"100%",
         display:"inline-block",
         backgroundColor:"inherit",
          //border:"solid red 2px",
+         //height:"min-conetnt"
 
     }
 }));
@@ -169,8 +171,8 @@ const TestimonialCarousel = (props) => {
         // })
 
         }
-<div className="slide-testimonial"  style={{wordWrap: "break-word"}}>
-            <div className="testimonial-item" >
+<div className="slide-testimonial"  style={{wordWrap: "break-word",height:"100%"}}>
+            <div className="testimonial-item" style={{wordWrap: "break-word",height:"100%"}}>
               <img className="lazy" src="img/heart.svg" alt="img"  style={{
                                                                                     position: "relative",
                                                                                     zIndex: 1,
@@ -186,8 +188,8 @@ const TestimonialCarousel = (props) => {
             </div>
           </div>
 
-<div className="slide-testimonial" >
-            <div className="testimonial-item" >
+<div className="slide-testimonial" style={{wordWrap: "break-word",height:"100%"}}>
+            <div className="testimonial-item" style={{wordWrap: "break-word",height:"100%"}}>
               <img className="lazy" src="img/spade.svg" alt="img" style={{
                                                                                     position: "relative",
                                                                                     zIndex: 1,
@@ -203,8 +205,8 @@ const TestimonialCarousel = (props) => {
             <br></br></div>
           </div>
 
-<div className="slide-testimonial" >
-            <div className="testimonial-item" >
+<div className="slide-testimonial" style={{wordWrap: "break-word",height:"100%"}}>
+            <div className="testimonial-item" style={{wordWrap: "break-word",height:"100%"}}>
               <img className="lazy" src="img/club.svg" alt="img" style={{
                                                                                     position: "relative",
                                                                                     zIndex: 1,

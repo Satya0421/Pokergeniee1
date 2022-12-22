@@ -14,18 +14,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var adminRuter = require('./routes/admin');
 
-var gallery1Ruter = require('./routes/gallery1');
-var enquiryRuter = require('./routes/enquirey');
-var sprayservicesenquiryRuter = require('./routes/sprayservicesenquiry');
-var contactusRuter =require('./routes/contactus');
-var subscribeRuter = require('./routes/subscription');
-var trainingregistrationRuter = require('./routes/trainingregistration');
-var catlogdownloadRuter = require('./routes/catlogdownload');
 var testimonialRuter = require('./routes/testimonials');
 var galleryRuter = require('./routes/gallery');
-var iframelinkRuter = require('./routes/iframelinks');
-var careersRuter = require('./routes/careers');
-var careerVacancyRuter = require('./routes/careerVacancy');
+
 
 var app = express();
 
@@ -92,18 +83,10 @@ app.use(express.static(path.join(__dirname, 'client','build')));*/
 //app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin',adminRuter);
-app.use('/gallery1',gallery1Ruter);
-app.use('/enquiry',enquiryRuter);sprayservicesenquiryRuter
-app.use('/sprayservicesenquiry',sprayservicesenquiryRuter);
-app.use('/contactusenquiry',contactusRuter);
-app.use('/subscribe',subscribeRuter);
-app.use('/trainingregistration',trainingregistrationRuter);
-app.use('/catlogdownload',catlogdownloadRuter);
+
 app.use('/testimonials',testimonialRuter);
 app.use('/gallery',galleryRuter);
-app.use('/iframelinks',iframelinkRuter);
-app.use('/careers',careersRuter);
-app.use('/careervacancy',careerVacancyRuter);
+
 
 
 //For cors error-policy

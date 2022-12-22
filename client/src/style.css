@@ -682,7 +682,7 @@ background-color: #01de9c;
 }
 .activeli a:hover {
   /* background-color: #1da912; */
-  color: #1da912;
+  color: #ECBE07;
   width: 100%;
 }
 
@@ -2105,7 +2105,7 @@ footer h5 {
   cursor: pointer;
 color: #ECBE07;
 }
-.blok-link li:not(:last-child) {
+.blok-link li:not(:last-child),.footer-info p {
   margin-bottom: 15px;
 }
 .blok-link li a {

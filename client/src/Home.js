@@ -24,10 +24,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import API from './Api';
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import "react-awesome-slider/dist/styles.css";
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
-  const style = {
-};
-    
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+
 
 function Home() {
 
@@ -122,83 +126,123 @@ const [spraysererr,setSprayserErr] =useState([]);
 
 
   
-      <div className="container" style={{paddingTop:"10px",width:"1000px",}}>
-   
-<Carousel  indicators={false} controls={false} >
-                                               
+      <div className="container" style={{paddingTop:"10px"}}>
+      <div className="col">
+<AutoplaySlider 
+play={true}
+    cancelOnInteraction={false}
+    interval={2000}
 
-
-                                            <Carousel.Item interval={2000}>
-                                               <img className="lazy d-block w-100"  src="img/poker_banner1.png" alt="img" loading="lazy"/>
-                                               
-                                               </Carousel.Item>
-                                            <Carousel.Item interval={2000}>
-                                               <img className="lazy d-block w-100"   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
-                                               
-                                               </Carousel.Item>
-                                            <Carousel.Item interval={2000}>
-                                               <img className="lazy d-block w-100"  src="img/poker_banner1.png" alt="img" loading="lazy"/>
-                                               
-                                               </Carousel.Item>
-                                            <Carousel.Item interval={2000}>
-                                               <img className="lazy d-block w-100"   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
-                                               
-                                               </Carousel.Item>
-
-                                               
-                                            </Carousel> 
-        
+animation="cubeAnimation">
+    <div data-src="/img/poker_banner1.png" />
+    <div data-src="/img/poker_banner2.jpg" />
+    <div data-src="/img/poker_banner1.png" />
+    <div data-src="/img/poker_banner2.jpg" />
+      </AutoplaySlider>
+ 
+      </div>  
     </div> 
-          {<section className="s-shop" style={{height:"inherit"}}>
+          {<section className="" style={{height:"inherit",}}>
                 <div className="container " style={{}}>
                    <h2 style={{}}>Downloads</h2><br />
           
-                  <div className="tab-wrap container" style={{}}>
-                    <ul className="tab-nav prod-tabs row" style={{paddingBottom:"0px",}}>
-                      <li className="item col" style={{}} >
-                        <div className="block-icon" style={{borderRadius:"20px" ,width:"200px",height:"300px"}}>
+                  {
+                  //   <div className="container">
+                  //                     <ul className="row justify-content-center" style={{padding:"0px",}}>
+                  //                       <li className="col-12 col-sm-12 col-md-5 justify-content-center align-self-center" style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                  //                         <div className="block-icon justify-content-center align-self-center" style={{borderRadius:"20px",width:"220px",height:"300px",}}>
+                  //                           <img src="windows.svg" alt="img"  /><br />
+                  //                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>WINDOWS APP</span>
+                  
+                  // {                         //<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline",textAlign:"left",}}><h4 style={{display:"inline",}}>3+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Branches</h6></span></div>
+                  //            }          
+                  //                         </div>
+                            
+                  //                       </li>
+                  //                        <li className="col-12 col-sm-12 col-md-5 justify-content-center align-self-center" style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                  //                         <div className="block-icon justify-content-center align-self-center" style={{borderRadius:"20px",width:"220px",height:"300px",}}>
+                  //                           <img src="play.svg" alt="img" /><br />
+                  //                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>INSTANT PLAY</span>
+                  
+                  
+                  
+                  // {                          //<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline",textAlign:"justify"}}><h4 style={{display:"inline"}}>5+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Drone Variants</h6></span></div>
+                  //           }          
+                  //                         </div>
+                  //                       </li>
+                  //                        <li className="col-12 col-sm-12 col-md-5 justify-content-center align-self-center" style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                  //                         <div className="block-icon justify-content-center align-self-center" style={{borderRadius:"20px",width:"220px",height:"300px",}}>
+                  //                           <img src="android.svg" alt="img" /><br />
+                  //                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>ANDROID APP</span>
+                                            
+                  // {
+                  //                           //<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline"}}><h4 style={{display:"inline"}}>30+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Pilot</h6></span></div>
+                  //           }
+                  //                         </div>
+                  //                       </li>
+                  //                        <li className="col-12 col-sm-12 col-md-5 justify-content-center align-self-center" style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                  //                         <div className="block-icon justify-content-center align-self-center" style={{borderRadius:"20px",width:"220px",height:"300px",}}>
+                  //                           <img src="mac.svg" alt="img" /><br />
+                  //                                                     <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>MAC APP</span>
+                  //                           {//<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline"}}><h4 style={{display:"inline"}}>5+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Technicians</h6></span></div>
+                  //                                     }
+                  //                         </div>
+                  //                       </li>
+                                        
+                                        
+                  //                     </ul>
+                  //                     </div>
+                                    }
+
+
+
+                                    <div className="container">
+                    <ul className="row " style={{padding:"0px",}}>
+                      <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                        <div className="block-icon  " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="windows.svg" alt="img"  /><br />
                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>WINDOWS APP</span>
 
-{                         <div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline",textAlign:"left",}}><h4 style={{display:"inline",}}>3+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Branches</h6></span></div>
+{                         //<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline",textAlign:"left",}}><h4 style={{display:"inline",}}>3+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Branches</h6></span></div>
            }          
                         </div>
           
                       </li>
-                      <li className="item col" rel="tab2" style={{}}>
-                        <div className="block-icon" style={{borderRadius:"20px",width:"200px",height:"300px"}}>
+                       <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                        <div className="block-icon  " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="play.svg" alt="img" /><br />
                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>INSTANT PLAY</span>
 
 
 
-{                          <div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline",textAlign:"justify"}}><h4 style={{display:"inline"}}>5+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Drone Variants</h6></span></div>
+{                          //<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline",textAlign:"justify"}}><h4 style={{display:"inline"}}>5+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Drone Variants</h6></span></div>
           }          
                         </div>
                       </li>
-                      <li className="item col" rel="tab3" style={{}}>
-                        <div className="block-icon" style={{borderRadius:"20px",width:"200px",height:"300px"}}>
+                       <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                        <div className="block-icon  " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="android.svg" alt="img" /><br />
                           <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>ANDROID APP</span>
                           
-
-                          <div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline"}}><h4 style={{display:"inline"}}>30+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Pilot</h6></span></div>
-          
+{
+                          //<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline"}}><h4 style={{display:"inline"}}>30+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Pilot</h6></span></div>
+          }
                         </div>
                       </li>
-                      <li className="item col" rel="tab4" style={{}}>
-                        <div className="block-icon" style={{borderRadius:"20px",width:"200px",height:"300px"}}>
+                       <li className="col-12 col-sm-12 col-md-5  " style={{width:"260px",padding:"20px",textAlign:"center",}} >
+                        <div className="block-icon justify-content-center " style={{borderRadius:"20px",width:"220px",height:"300px",}}>
                           <img src="mac.svg" alt="img" /><br />
                                                     <span style={{color:"white",paddingTop:"20px",fontWeight:"bold",fontSize:"10px"}}>MAC APP</span>
-                          <div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline"}}><h4 style={{display:"inline"}}>5+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Technicians</h6></span></div>
-          
+                          {//<div className="info-span" style={{color:"white",width:"100%",textAlign:"left",paddingLeft:"30%"}}><span style={{display:"inline"}}><h4 style={{display:"inline"}}>5+</h4></span> <span style={{display:"inline"}}><h6 style={{display:"inline"}}>Technicians</h6></span></div>
+                                    }
                         </div>
                       </li>
                       
                       
                     </ul>
+                    </div>
           </div>
-              </div> 
+              
               </section>}
     
     
@@ -239,3 +283,28 @@ export default Home;
 
 
 
+// {  
+// // <Carousel  indicators={false} controls={false} >
+                                               
+
+
+// //                                             <Carousel.Item interval={2000}>
+// //                                                <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+                                               
+// //                                                </Carousel.Item>
+// //                                             <Carousel.Item interval={2000}>
+// //                                                <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+                                               
+// //                                                </Carousel.Item>
+// //                                             <Carousel.Item interval={2000}>
+// //                                                <img className="lazy "  src="img/poker_banner1.png" alt="img" loading="lazy"/>
+                                               
+// //                                                </Carousel.Item>
+// //                                             <Carousel.Item interval={2000}>
+// //                                                <img className="lazy "   src="img/poker_banner2.jpg" alt="img" loading="lazy"/>
+                                               
+// //                                                </Carousel.Item>
+
+                                               
+// //                                             </Carousel> 
+// }

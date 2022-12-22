@@ -52,26 +52,24 @@ function Footer() {
         <footer style={{margin:"0px"}}>
     
       <div className="row " style={{margin:"5px",marginTop:"20px"}}>
-        <div className="col-12 col-sm-12 col-lg-3 col-md-6 footer-info" >
+        <div className="col-12 col-sm-12 col-lg-3 col-md-4 footer-info" >
           <h6>contact us</h6>
           <p style={{color:"#7d7d7d"}}><i className="fa fa-map-marker" style={{float:"left",padding:"0px",width:"25px",}}></i><span><a href="#" 
-           target="_blank" style={{color:"inherit",textDecoration:"none",marginBottom:"25px"}}>#29 , Shitolla Street, Kolkata, WB 700007.</a></span><br />
-            <br />
-            
+           target="_blank" style={{color:"inherit",textDecoration:"none",marginBottom:"25px"}}>#29 , Shitolla Street, Kolkata, WB 700007.</a></span></p>
            
-            <i className="fa fa-envelope" aria-hidden="true" style={{float:"left",padding:"0px",width:"25px",}}></i><span style={{width:"auto",}} onClick={(e) => {window.location.href ='mailto:corporate@multiplexdrone.com';}}>Support@pokergeniee.com</span>
-            <br /><br />
-            <i className="fa fa-phone" aria-hidden="true" style={{float:"left",padding:"0px",width:"25px",}}></i><span>+91-8904095588</span>
-            <br />
-            <i className="fa fa-phone" aria-hidden="true" style={{float:"left",padding:"0px",width:"25px",}}></i><span>+91-8904085588</span>
-            <br />
+           <p style={{color:"#7d7d7d"}}> <i className="fa fa-envelope" aria-hidden="true" style={{float:"left",padding:"0px",width:"25px",}}></i><span style={{width:"auto",}} onClick={(e) => {window.location.href ='mailto:corporate@multiplexdrone.com';}}>Support@pokergeniee.com</span>
+             </p>
+            <p style={{color:"#7d7d7d"}}> <i className="fa fa-phone" aria-hidden="true" style={{float:"left",padding:"0px",width:"25px",}}></i><span>+91-8904095588</span>
+             </p>
+             <p style={{color:"#7d7d7d"}}><i className="fa fa-phone" aria-hidden="true" style={{float:"left",padding:"0px",width:"25px",}}></i><span>+91-8904085588</span>
+             </p>
 
 
-          </p>
+         
         </div>
-        <div className="col-12 col-sm-12 col-md-12 col-lg-6  blok-link footer-link" style={{margin:"0px",padding:"0px"}}>
+        <div className="col-12 col-sm-12 col-md-8 col-lg-9  blok-link footer-link" style={{margin:"0px",padding:"0px"}}>
           <div className="row" style={{margin:"0px"}}>
-          <ul className="col-4 col-sm-4 col-lg-4 col-md-4 support-pages">
+          <ul className="col-4 col-sm-4 col-lg-4 col-md-3 support-pages">
           <h6>Pages</h6>
             <li ><a href="/">Home</a></li>
             <li><a href="#">About</a></li>
@@ -88,7 +86,7 @@ function Footer() {
             <li style={{visibility:"visible"}}><a href="#">Disconnect Policy</a></li>
           </ul>
         
-          <ul className="col-4 col-sm-4 col-lg-3 col-md-4 support-foot" >
+          <ul className="col-4 col-sm-4 col-lg-2 col-md-5 support-foot" >
           <h6>support</h6>
             <li><a href="#" data-bs-toggle="modal" data-bs-target="#terms-conditions">Terms & Conditions</a></li>
             <li><a href="#" data-bs-toggle="modal" data-bs-target="#">Refund Policy</a></li>
@@ -99,32 +97,30 @@ function Footer() {
 
         </div>
         
-        <div className="col-12 col-sm-12 col-md-6 col-lg-3  footer-subscribe">
-          <h6>subscribe</h6>
-          <form className="subscribe-form" onSubmit={Subscriber}>
-            <div className="input-group mb-3">
-              <input type="email" className="form-control" name="subscriber" placeholder="subscribe" aria-label="Username" aria-describedby="basic-addon1" required/>
-              <button className="input-group-text text-light" style={{backgroundColor: "#ECBE07"}}>send</button>
-            </div>
-          </form>
-        </div>
+
       </div>
       <br />
-      <div className="" style={{textAlign:"center",padding:"0px",paddingRight:"0%",width:"100%",margin:"0px"}}>
-            <a href="#" className="logo-disappear" style={{textAlign:"center",padding:"0px"}}><img src="pokergenieelogo.png" alt="logo" style={{textAlign:"center",paddingRight:"0%"}} /></a>
-          </div>
+      {//<div className="" style={{textAlign:"center",padding:"0px",paddingRight:"0%",width:"100%",margin:"0px"}}>
+         //         <a href="#" className="logo-disappear" style={{textAlign:"center",padding:"0px"}}><img src="pokergenieelogo1.png" alt="logo" style={{textAlign:"center",paddingRight:"0%"}} /></a>
+           //     </div>
+              }
       <div className="footer-bottom" style={{margin:"0px",padding:"0px"}}>
         
           
          <div className="row justify-content-between copyright" style={{margin:"0px"}}>
-            <div className="col-12 col-md-4 copyRightHolder v-II text-center pt-md-2 pb-md-2 py-2">
-              <p className="mb-0">
+         <div className="col-12 col-md-3 " style={{textAlign:"center"}}>
+              <p className="">
+            <img src="pokergenieelogo1.png" height="50px" width="120px" alt="logo" style={{paddingRight:"0%"}} />
+              </p>
+            </div>
+            <div className="col-12 col-md-4 copyRightHolder v-II text-center pt-md-4 " style={{}}>
+              <p className="">
                 &#169; Copyright : <a>pokergeniee.com</a>
               </p>
             </div>
             <div
-              className="col-12 col-md-3 mt-2"
-              style={{ marginTop: "20px !important", color: " #fff" }}
+              className="col-12 col-md-3 mt-3"
+              style={{ color: " #fff" }}
             >
               <p className="text-center">
                 Powered by : <a href="https://www.techraven.live" target="_blank">
