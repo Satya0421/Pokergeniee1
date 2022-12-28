@@ -838,22 +838,14 @@ Also note an individual can withdraw 9999/- every day without the implication of
             <div className="">
             <div className="li-num" >4</div>
             <div className="policy-description" >
-            <p>Should a tourney be canceled midway, all refunds will be at the discretion of PokerGeniee based on the following factors.</p>
+            <p>Should a tourney be canceled midway, all refunds will be at the discretion of PokerGeniee based on the following factors.<br />
+           <b style={{color:"#ECBE07"}}> a.</b>  In the event of payouts been made for a tournament, then the balance amount will be distributed equally to the remaining players.<br />
+           <b style={{color:"#ECBE07"}}> b.</b>  In the event where the payouts have yet to be made towards the tournament , then the payouts will be canceled and the entire amount will be refunded to each player.<br />        
+           <b style={{color:"#ECBE07"}}> c.</b>  The choice of which option to use will be at the discretion of PokerGeniee at all times.
+            </p>
 
-            <div className="li-num" >a</div>
-            <div className="policy-description" >
-            <p>In the event of payouts been made for a tournament, then the balance amount will be distributed equally to the remaining players.</p>
-            </div>
-
-            <div className="li-num" >b</div>
-            <div className="policy-description" >
-            <p>In the event where the payouts have yet to be made towards the tournament , then the payouts will be canceled and the entire amount will be refunded to each player.</p>
-            </div>
-
-            <div className="li-num" >c</div>
-            <div className="policy-description" >
-            <p>The choice of which option to use will be at the discretion of PokerGeniee at all times.</p>
-            </div>
+            
+            
 
             </div>
             <div style={{clear:'both'}}></div>
