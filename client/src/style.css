@@ -2252,9 +2252,10 @@ color:#212529 !important ;
   font-weight: 700;
 }
 .li-num{
-  color: green;
+  color: #ECBE07;
   float: left;
   width: 5%;
+  font-weight: 700;
 }
 .policy-description{
   float: right;

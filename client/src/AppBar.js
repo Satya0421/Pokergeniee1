@@ -69,7 +69,7 @@ const ResponsiveAppBar = () => {
       <Container maxWidth="xl" sx={{textAlign:"center",height:"90px",}}>
         <Toolbar disableGutters sx={{textAlign:"center",height:"100%"}}>
         <Box sx={{ flexGrow: 0,}} style={{float:"left",textAlign:"top-center",paddingRight:"0%"}}>
-                                <a href="/" className="logo"><img src="pokergenieelogo1.png" width="100%" alt="logo" /></a>
+                                <a href="/" className="logo"><img src="pokergenieelogo.png" width="100%" alt="logo" /></a>
                               
             
           </Box>
