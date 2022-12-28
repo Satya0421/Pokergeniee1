@@ -52,78 +52,14 @@ const [spraysererr,setSprayserErr] =useState([]);
 
 
   
-          const sendSprayServicesDetails=async(e)=>{
-          e.preventDefault();
-          let objectOb = {
-            name: e.target.yourname.value,
-            contactnumber: e.target.yourphone.value,
-            email: e.target.youremail.value,
-            message: e.target.yourtext.value,
-            place: e.target.yourplace.value,
-            crop: e.target.yourcrop.value,
-            acre: e.target.youracres.value
-          }
-          //console.log(objectOb);
-          await axios
-                .post('http://localhost:4003/sprayservicesenquiry', objectOb)
-                .then((response) => {
-                  navigate(`/`);
-                  toast.success("Successfully Enquiry Submitted.",{position: "top-center",});
-                  setShowspray(false);
-                  //console.log(typeof response.data.contactnumber);
-                  setSprayserErr([]);
-                    //.log(err);
-                    
-                })
-                .catch((error) => {
-                  //console.log("err",error.response.data.replace("enquiries validation failed:", "").split(",",20));
-                 // console.log(error.response)
-                  //setSprayserErr(error.response.data.replace("enquiries validation failed:", "").split(",",20))
-                 })
-                .finally(()=>{
-                  
-                })
-          }
-
-          const sendEnquiryDetails=async(e)=>{
-          e.preventDefault();
-          let objectOb = {
-            name: e.target.yourname.value,
-            contactnumber: e.target.yourphone.value,
-            email: e.target.youremail.value,
-            message: e.target.yourtext.value,
-            place: e.target.yourplace.value,
-
-          }
-          console.log(objectOb);
-          await axios
-                .post(API+'/enquiry', objectOb)
-                .then((response) => {
-                  navigate(`/`);
-                  toast.success("Successfully Enquiry Submitted.",{position: "top-center",});
-                  setShow(false);
-                  //console.log(typeof response.data.contactnumber);
-                  setErr([]);
-                    //.log(err);
-                })
-                .catch((error) => {
-                  //console.log("err",error.response.data.replace("enquiries validation failed:", "").split(",",20));
-                  //console.log(error.response)
-                  //setErr(error.response.data.replace("enquiries validation failed:", "").split(",",20))#ECBE07
-                 })
-                .finally(()=>{
-                  
-                })
-
-
-          }
+        
  
 
 
   return (
 <div style={{backgroundColor:"#fff"}}>                           
  <div style={{marginTop:"0px"}}><ResponsiveAppBar /> </div> 
-<div className="col-12" style={{padding:"10px",}} >
+<div className="col-12" style={{padding:"0px",}} >
       <div style={{}}>
    
 <video className="video-box" autoPlay loop muted width="100%" >
